@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Ecommerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <a href="home.html"><img src="images/logo (2).png" alt=""></a>
+        </div>
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><i class="fa-solid fa-x" id="close" style="color: white;"></i></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html"  class="active">Contact</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <i class="fa-solid fa-bars" id="hambar"></i>
+            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="page-header about-header">
+        <h1>Contact Us</h1>
+        <p>Contact any time and leave a message in form</p>
+    </div>
+    <div id="contact" class="contact">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h1>Visit one of us our agency locations or contact us today</h1>
+            <h3>Head Office</h3>
+            <div class="list">
+                <li>
+                    <i class="fa-solid fa-map"></i>
+                    <p>56 Glassford Street glasgow GI IUL New York</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>contact@example.com</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>contact@example.com</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Monday to Saturday:9.00AM to 9.00PM</p>
+                </li>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62385.734729598495!2d79.02805262142252!3d12.240937612759195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacc0852cd3d6cd%3A0x74002b16e5bac856!2sTiruvannamalai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1736093049464!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="form" id="form">
+            <!-- <form onsubmit="sendEmail(event)">
+                <span>LEAVE A MESSAGE</span>
+                <h1>We love to hear from you</h1>
+                <input type="text" placeholder="Your Name" name="name" id="name">
+                <input type="email" placeholder="Your Mail" name="email" id="email">
+                <input type="text" placeholder="Subject">
+                <textarea  id="" cols="30" rows="10" name="message" id="message"></textarea>
+                <button class="buttons" type="submit">Submit</button>
+            </form> -->
+            <form onsubmit="sendEmail(event)">
+                <span>LEAVE A MESSAGE</span>
+                <input type="text" name="name" id="name" placeholder="Your Name">
+                <input type="email" name="mail" id="email" placeholder="Email id">
+                <input type="text" placeholder="Subject">
+                <textarea name="message" id="message" placeholder="How can we help you?" rows="4"></textarea>
+                <button class="buttons" type="submit">Send</button>
+                </form>
+        <div class="person">
+            <div class="person-details">
+                <img src="images/1.png" alt="">
+                <p><span>Joe Doe</span> Senior Marketing Manager <br>
+                phone:+000 123 000 77 88 <br> Email:example@gmail.com</p>
+            </div>
+            <div class="person-details">
+                <img src="images/2.png" alt="">
+                <p><span>Joe Doe</span> Senior Marketing Manager <br>
+                phone:+000 123 000 77 88 <br> Email:example@gmail.com</p>
+            </div>
+            <div class="person-details">
+                <img src="images/3.png" alt="">
+                <p><span>Joe Doe</span> Senior Marketing Manager <br>
+                phone:+000 123 000 77 88 <br> Email:example@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter">
+        <div class="content">
+            <h1>Sign Up For Newsletters</h1>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Enter your mail address" id="mail">
+            <button class="buttons" id="button">Sign Up</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="address">
+            <img src="images/logo (2).png" style="width: 90px;">
+            <h2>Contact</h2>
+            <p><span>Address:</span>562 Wellington <br>road,street 32,<br>San Francisco</p>
+            <p><span>Phone:</span>+01 2222 365<br>/(+91)01 2345 6789</p>
+            <p><span>Hours:</span>10.00-18.00,<br>Mon-Sat</p>
+            <h2>Follow Us</h2>
+            <div class="logo">
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                 <span><i class="fa-brands fa-twitter"></i></span>
+                 <span><i class="fa-brands fa-instagram"></i></span>
+                 <span><i class="fa-brands fa-pinterest"></i></span>
+                 <span><i class="fa-brands fa-youtube"></i></span>
+            </div>
+        </div>
+        <div class="about">
+            <h2>About</h1>
+            <p>About Us</p>
+            <p>Delivery Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="account">
+            <h2>My Account</h2>
+            <p>Sign In</p>
+            <p>View Cart</p>
+            <p>My Wishlist</p>
+            <p>Track my order</p>
+            <p>Help</p>
+        </div>
+        <div class="app">
+            <h2>Install App</h2>
+            <p>From App store or google play</p>
+            <p>Secured Payment Gateways</p>
+        </div>
+    </div>
+    <p class="limited">@2024. Tech2 etc-HTML CSS Template</p>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function () {
+      emailjs.init("vUmLYHBo3i3DLscL5");
+    })();
+  </script>
+</body>
+
+</html>
